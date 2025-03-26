@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD</title>
+</head>
+<body>
+<H1>CRUD</H1> Create Read Update Delete
+<hr>
+<H1>C</H1>Create
+<form action="." method="get" >
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email">
+  <button type="submit" name = "But" value="Create">Create</button>
+</form>
+
+<hr>
+<H1>R</H1>Read
+<form action="." method="get" >
+  <button type="submit" name = "But" value="Read">Read</button>
+</form>
+<table style="width:100%" border="1">
+    {% autoescape false %}
+    {{content}}
+    {% endautoescape %}
+  </table>
+<hr>
+<H1>U</H1>Update
+<form action="." method="get" >
+  <label for="id">ID:</label>
+  <input type="number" id="id" name="id"><br><br>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <label for="email">E-mail:</label>
+  <input type="text" id="email" name="email">
+  <button type="submit" name = "But" value="Update">Update</button>
+</form>
+
+<hr>
+<H1>D</H1>Delete
+<form action="." method="get" >
+  <label for="id">ID:</label>
+  <input type="text" id="id" name="id"><br><br>
+  <button type="submit" name = "But" value="Delete">Delete</button>
+</form>
+<hr>
+<H3>CRUD</H3>
+<hr>
+
+</body>
+</html>

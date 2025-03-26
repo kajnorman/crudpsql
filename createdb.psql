@@ -1,0 +1,8 @@
+-- i en database skal du
+-- Oprette en tabel
+CREATE TABLE IF NOT EXISTS contacts (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(25),
+    last_name VARCHAR(25),
+    email VARCHAR(100)
+);

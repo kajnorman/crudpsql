@@ -1,0 +1,9 @@
+To create database :
+run createdb.psql in right schema and database or adapt in crudpsg.py
+To run flaskserver :
+python3 -m flask --app crud run --host=0.0.0.0 --debug
+
+pip install flask
+pip install psycopg
+
+
