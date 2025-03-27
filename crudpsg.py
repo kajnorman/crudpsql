@@ -94,5 +94,5 @@ def mainpage():
     return render_template("CRUD.html", content="")
 
 
-'''if __name__ == "__main__":
-    app.run()'''
+if __name__ == "__main__":
+    app.run()
